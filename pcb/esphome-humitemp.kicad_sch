@@ -2396,7 +2396,7 @@
 				)
 			)
 		)
-		(symbol "Regulator_Linear:TLV75533PDRV"
+		(symbol "Regulator_Linear:TLV75533PDBV"
 			(pin_names
 				(offset 0.254)
 			)
@@ -2411,7 +2411,7 @@
 					)
 				)
 			)
-			(property "Value" "TLV75533PDRV"
+			(property "Value" "TLV75533PDBV"
 				(at 0 5.715 0)
 				(effects
 					(font
@@ -2420,7 +2420,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
 				(at 0 8.255 0)
 				(effects
 					(font
@@ -2439,7 +2439,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, WSON6"
+			(property "Description" "500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2457,7 +2457,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "WSON*1EP*2x2mm*P0.65mm*"
+			(property "ki_fp_filters" "SOT?23*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2466,7 +2466,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "TLV75533PDRV_0_1"
+			(symbol "TLV75533PDBV_0_1"
 				(rectangle
 					(start -5.08 4.445)
 					(end 5.08 -5.08)
@@ -2479,11 +2479,11 @@
 					)
 				)
 			)
-			(symbol "TLV75533PDRV_1_1"
-				(pin power_out line
-					(at 7.62 2.54 180)
+			(symbol "TLV75533PDBV_1_1"
+				(pin power_in line
+					(at -7.62 2.54 0)
 					(length 2.54)
-					(name "OUT"
+					(name "IN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2491,24 +2491,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 5.08 0 180)
-					(length 2.54) hide
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2526,7 +2508,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2544,7 +2526,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2553,7 +2535,7 @@
 					)
 				)
 				(pin no_connect line
-					(at 5.08 -2.54 180)
+					(at 5.08 0 180)
 					(length 2.54) hide
 					(name "NC"
 						(effects
@@ -2562,7 +2544,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2570,35 +2552,17 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -7.62 2.54 0)
+				(pin power_out line
+					(at 7.62 2.54 180)
 					(length 2.54)
-					(name "IN"
+					(name "OUT"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 90)
-					(length 2.54) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3364,12 +3328,6 @@
 		(uuid "2f3179e8-c25d-4db0-9205-b1023d8087e3")
 	)
 	(junction
-		(at 129.54 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "32a92809-c4a9-4b14-88aa-917879f394f5")
-	)
-	(junction
 		(at 54.61 64.77)
 		(diameter 0.9144)
 		(color 0 0 0 0)
@@ -3416,12 +3374,6 @@
 		(diameter 0.9144)
 		(color 0 0 0 0)
 		(uuid "ced7f981-c38d-4ca9-802a-86f64182e9ed")
-	)
-	(junction
-		(at 129.54 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ea153d19-a8d4-4f7e-9e2d-98c61658115c")
 	)
 	(no_connect
 		(at 110.49 46.99)
@@ -3669,16 +3621,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 30.48) (xy 129.54 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7916cc31-354f-4578-b742-66db74327b0b")
-	)
-	(wire
-		(pts
 			(xy 45.72 106.68) (xy 52.07 106.68)
 		)
 		(stroke
@@ -3839,26 +3781,6 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 25.4) (xy 129.54 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c761298e-aec0-41ee-a0f6-219e39543524")
-	)
-	(wire
-		(pts
-			(xy 120.65 25.4) (xy 129.54 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d26d67cf-e978-4f95-8623-855d5e6dbf53")
-	)
-	(wire
-		(pts
 			(xy 196.85 80.01) (xy 196.85 82.55)
 		)
 		(stroke
@@ -3876,6 +3798,16 @@
 			(type default)
 		)
 		(uuid "d441b15b-02dc-4677-aded-611e5a368e7f")
+	)
+	(wire
+		(pts
+			(xy 129.54 25.4) (xy 138.43 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d655629f-cbb9-4ede-a5c3-83653438dd18")
 	)
 	(wire
 		(pts
@@ -4003,17 +3935,6 @@
 		)
 		(uuid d53a46f3-f5c4-4b57-9e3d-1366ab6cf317)
 	)
-	(text "C3 uses GPIO9 now"
-		(exclude_from_sim no)
-		(at 176.53 85.09 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "409915e1-d212-47df-8551-ec99a68915ff")
-	)
 	(text "3v3 Regulation"
 		(exclude_from_sim no)
 		(at 16.51 16.51 0)
@@ -4046,17 +3967,6 @@
 			(justify left bottom)
 		)
 		(uuid "ea7c6366-aa46-48b8-b177-63fdcd3643ee")
-	)
-	(label "GPIO0"
-		(at 170.18 85.09 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3c186d8a-40f7-44f4-94a6-ec487abd49b1")
 	)
 	(label "EN"
 		(at 106.68 41.91 0)
@@ -4424,7 +4334,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "10uF"
 			(at 53.34 33.0263 0)
 			(effects
 				(font
@@ -4433,7 +4343,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 50.8 31.75 0)
 			(effects
 				(font
@@ -4460,7 +4370,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C28323"
+		(property "LCSC" "C19702"
 			(at 50.8 31.75 0)
 			(effects
 				(font
@@ -4576,7 +4486,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "10uF"
 			(at 75.565 33.0199 0)
 			(effects
 				(font
@@ -4585,7 +4495,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 73.025 31.75 0)
 			(effects
 				(font
@@ -4612,7 +4522,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C28323"
+		(property "LCSC" "C19702"
 			(at 73.025 31.75 0)
 			(effects
 				(font
@@ -4819,7 +4729,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "1u"
 			(at 96.52 45.7199 0)
 			(effects
 				(font
@@ -4828,7 +4738,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 99.06 44.45 0)
 			(effects
 				(font
@@ -4919,7 +4829,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 179.07 64.77 0)
 			(effects
 				(font
@@ -5266,6 +5176,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:TLV75533PDBV")
+		(at 63.5 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44c0d91e-97b2-4952-90e7-18f0327ab507")
+		(property "Reference" "U1"
+			(at 63.5 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TLV75533PDBV"
+			(at 63.5 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 63.5 20.955 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv755p.pdf"
+			(at 63.5 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5"
+			(at 63.5 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "c6083018-cace-48af-ae9a-af7ac331ad2a")
+		)
+		(pin "2"
+			(uuid "a30f0e99-81fd-43ab-8cb6-4d8539b35e14")
+		)
+		(pin "5"
+			(uuid "6d171a5d-0aeb-4183-802c-16d74cd21681")
+		)
+		(pin "1"
+			(uuid "fccb2c65-5bcb-4d76-b484-ef569a23a254")
+		)
+		(pin "3"
+			(uuid "91f2551e-8c4f-467a-8f73-e426d19bc1b4")
+		)
+		(instances
+			(project ""
+				(path "/9ed555b5-b872-4c07-8527-e7d67b145785"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Espressif:ESP32-C3-MINI-1")
 		(at 138.43 64.77 0)
 		(unit 1)
@@ -5583,90 +5571,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:TLV75533PDRV")
-		(at 63.5 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "77b426e1-9d98-4058-b77c-88014a8f2edb")
-		(property "Reference" "U1"
-			(at 63.5 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TLV75533PDRV"
-			(at 63.5 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"
-			(at 63.5 20.955 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv755p.pdf"
-			(at 63.5 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, WSON6"
-			(at 63.5 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "91fc240d-3ddf-4074-9c5e-41fc1a5d73ec")
-		)
-		(pin "6"
-			(uuid "8fcee485-9612-46d1-8763-17253cefb6d0")
-		)
-		(pin "5"
-			(uuid "266c1fc2-4f86-49bf-81ac-b482838026c2")
-		)
-		(pin "3"
-			(uuid "84a2c66a-42db-428f-8770-995b69466660")
-		)
-		(pin "7"
-			(uuid "e99c42d7-f3d6-4028-9572-99dfe7eaacad")
-		)
-		(pin "2"
-			(uuid "7f23b9dd-39bd-42cd-aaa6-8618a1b9fd0d")
-		)
-		(pin "1"
-			(uuid "c2f9f5fe-4e17-43e8-b96c-2c04d1e9b774")
-		)
-		(instances
-			(project ""
-				(path "/9ed555b5-b872-4c07-8527-e7d67b145785"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 63.5 36.83 0)
 		(unit 1)
@@ -5793,98 +5697,6 @@
 			(project "esphome-humitemp"
 				(path "/9ed555b5-b872-4c07-8527-e7d67b145785"
 					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 129.54 27.94 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8f72d467-9a72-42a0-be8b-fb65e0ca357e")
-		(property "Reference" "C1"
-			(at 127 26.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10u"
-			(at 127 29.2099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 129.54 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 129.54 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 129.54 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C15850"
-			(at 129.54 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3e92f346-4405-437a-881b-b2e13afc29d9")
-		)
-		(pin "2"
-			(uuid "2b470ecb-7950-4873-b94b-28dcfe7c50da")
-		)
-		(instances
-			(project "esptemp8c"
-				(path "/23e49c1c-e106-44cc-bc49-1a732eea896b"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-			(project "esphome-humitemp"
-				(path "/9ed555b5-b872-4c07-8527-e7d67b145785"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-			(project "megadesk_companion"
-				(path "/efdd8971-0318-4d66-ba3f-bc0ab1fdcf7e"
-					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -6049,7 +5861,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 99.06 39.37 0)
 			(effects
 				(font
@@ -6199,7 +6011,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 120.65 27.94 180)
+		(at 129.54 27.94 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6208,7 +6020,7 @@
 		(fields_autoplaced yes)
 		(uuid "bd0a1874-6f16-40c8-a729-f2b71ebd9a85")
 		(property "Reference" "C4"
-			(at 118.11 26.6636 0)
+			(at 127 26.6636 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6217,7 +6029,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 118.11 29.2036 0)
+			(at 127 29.2036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6226,7 +6038,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 120.65 27.94 0)
+			(at 129.54 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6235,7 +6047,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 120.65 27.94 0)
+			(at 129.54 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6244,7 +6056,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 120.65 27.94 0)
+			(at 129.54 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6253,7 +6065,7 @@
 			)
 		)
 		(property "LCSC" "C14663"
-			(at 120.65 27.94 0)
+			(at 129.54 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6310,7 +6122,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 54.61 69.85 0)
 			(effects
 				(font
@@ -6548,7 +6360,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 63.5 72.39 0)
 			(effects
 				(font
@@ -6693,7 +6505,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 196.85 77.47 0)
 			(effects
 				(font
@@ -6854,7 +6666,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
+		(property "Footprint" "EasyEda:SW-SMD_L3.0-W2.5-P3.40-LS4.0-EH"
 			(at 201.93 85.09 0)
 			(effects
 				(font
